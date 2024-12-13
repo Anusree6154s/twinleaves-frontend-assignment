@@ -1,4 +1,4 @@
-import { Box, CircularProgress, Skeleton } from "@mui/material";
+import { Box,  Skeleton } from "@mui/material";
 import React from "react";
 
 export const LoaderGrid=()=> {
@@ -8,13 +8,11 @@ export const LoaderGrid=()=> {
         display: "flex",
         flexDirection: "column",
         gap: "5px",
-        // justifyContent: "center",
         alignItems: "stretch",
         height: "100vh",
         width: "100%",
       }}
     >
-      {/* <CircularProgress /> */}
       {Array.from({ length: 5}).map((_, index) => (
         <Skeleton key={index} variant="rounded" width='100%' height={80} />
       ))}
@@ -29,13 +27,11 @@ export const LoaderCategory=()=> {
         display: "flex",
         flexDirection: "column",
         gap: "5px",
-        // justifyContent: "center",
         alignItems: "stretch",
         height: "100vh",
         width: "100%",
       }}
     >
-      {/* <CircularProgress /> */}
       {Array.from({ length: 10 }).map((_, index) => (
         <Skeleton key={index} variant="rounded" width='100%' height={30} />
       ))}
