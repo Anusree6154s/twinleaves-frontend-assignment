@@ -31,7 +31,6 @@ export default function HomePage() {
             product.category.slice(1, product.category.length).toLowerCase();
           return categoryFilters.includes(formattedCategory);
         });
-        console.log(processedProducts);
       }
       if (priceSort) {
         switch (priceSort) {
@@ -53,6 +52,7 @@ export default function HomePage() {
       processedProducts = processedProducts.filter((product) =>
         product.name.toLowerCase().includes(searchInput)
       );
+      console.log(processedProducts);
 
       setUpdatedProducts(processedProducts);
     }

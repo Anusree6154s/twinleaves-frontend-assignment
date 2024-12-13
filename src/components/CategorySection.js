@@ -11,7 +11,6 @@ import { ProductContext } from "../contexts/ProductContext";
 
 export default function CategorySection({ filters, setFilters }) {
   const { products } = useContext(ProductContext);
-  console.log(products);
   const [categories, setCategories] = useState(products);
 
   useEffect(() => {
