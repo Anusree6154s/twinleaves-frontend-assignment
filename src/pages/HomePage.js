@@ -54,7 +54,6 @@ export default function HomePage() {
         product.name.toLowerCase().includes(searchInput)
       );
 
-      console.log(processedProducts);
       setUpdatedProducts(processedProducts);
     }
 
