@@ -67,8 +67,6 @@ export default function SearchBar({ setFilters }) {
     debouncedInput(e.target.value);
   };
 
-  console.log(input);
-
   return (
     <SearchBox>
       <StyledInputBase
